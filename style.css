@@ -1,0 +1,59 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin:0 auto;
+    max-width: 450px;
+    max-height: 300px;
+}
+
+h1{
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+td{
+    padding:3px;
+    margin:10px;
+}
+div{
+    padding:20px;
+    margin: 40px 0;
+    background: #ffffe6;
+}
+td input{
+    width: 250px;
+}
+#osoite td input{
+    flex-direction: column
+
+}
+#puhelin{
+    margin-bottom: 10px;
+}
+
+#maa td input:hover{
+    border-color: black;
+    border-style: solid;
+    
+}
+
+.maa{
+    width: 150px;
+}
+#laheta{
+white-space: nowrap;
+    position:relative;
+    padding:1px;
+    left:109%;
+
+}
+
+.assing{
+    font-weight: bold;
+}

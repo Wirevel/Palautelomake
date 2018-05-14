@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Palautelomake</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div>
+        <table>
+            <form>
+        <h1>Palautelomake</h1>
+        
+            
+            <tr class="assing" id="etunimi">
+                <td>Etunimi:</td>
+                <td><input type="text" name="etunimi"></td>
+            </tr>
+                
+            <tr class="assing" id="sukunimi">
+                <td>Sukunimi:</td>
+                <td><input type="text" name="sukunimi"></td>
+            </tr>
+                
+            <tr class="assing" id="sähköposti">
+                <td>Sähköposti:</td>
+                <td><input type="text" name="sahkoposti"></td>
+            </tr>
+                
+            <tr class="assing" id="puhelin">
+                <td>Puhelin:</td>
+                <td><input type="text" name="puhelin"></td>
+            </tr>
+                
+            <tr class="assing" id="osoite">
+                <td>Osoite:</td>
+                <td><textarea rows="6" cols="40" name="osoite"></textarea></td>
+            </tr>
+                
+            <tr class="assing" id="maa">
+                <td>Maa</td>
+                <td><select list="maita" type="text" name="maa" class="maa">
+                    <option value="Choose yours">[Choose yours]</option>
+                    <option value="islanti">Islanti</option>
+                    <option value="iso-britannia">Iso-Britannia</option>
+                    <option value="latvia">Latvia</option>
+                    <option value="liettua">Liettua</option>
+                    <option value="norja">Norja</option>
+                    <option value="ruotsi">Ruotsi</option>
+                    <option value="somalia">Somalia</option>
+                    <option value="suomi">Suomi</option>
+                    <option value="tanska">Tanska</option>
+                    <option value="venäjä">Venäjä</option>
+                    <option value="viro">Viro</option>
+                    </select>
+                </td>
+            </tr>
+                <td><button id="laheta">Lähetä</button></td>
+
+                
+
+            </form>
+        </table>
+        </div>
+        <script href="script.js"></script>
+    </body>
+</html>
