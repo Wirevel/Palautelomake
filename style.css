@@ -29,19 +29,6 @@ div{
 td input{
     width: 250px;
 }
-#osoite td input{
-    flex-direction: column
-
-}
-#puhelin{
-    margin-bottom: 10px;
-}
-
-#maa td input:hover{
-    border-color: black;
-    border-style: solid;
-    
-}
 
 .maa{
     width: 150px;
@@ -51,6 +38,7 @@ white-space: nowrap;
     position:relative;
     padding:1px;
     left:109%;
+    width:60px;
 
 }
 

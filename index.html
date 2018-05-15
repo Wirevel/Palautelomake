@@ -4,63 +4,65 @@
         <title>Palautelomake</title>
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
+    <script src="script.js" type="text/jscript"></script>
     <body>
+        
         <div>
         <table>
-            <form>
+            <form name="lomake" id="lomake" action="" onsubmit="return Tarkasta()" method="post">
         <h1>Palautelomake</h1>
         
             
-            <tr class="assing" id="etunimi">
+            <tr class="assing" >
                 <td>Etunimi:</td>
-                <td><input type="text" name="etunimi"></td>
+                <td><input type="text" id="etunimi" name="etunimi"></td>
             </tr>
                 
-            <tr class="assing" id="sukunimi">
+            <tr class="assing" >
                 <td>Sukunimi:</td>
-                <td><input type="text" name="sukunimi"></td>
+                <td><input type="text" id="sukunimi" name="sukunimi"></td>
             </tr>
                 
-            <tr class="assing" id="sähköposti">
+            <tr class="assing" >
                 <td>Sähköposti:</td>
-                <td><input type="text" name="sahkoposti"></td>
+                <td><input type="text" id="sahköposti" name="email"></td>
             </tr>
                 
-            <tr class="assing" id="puhelin">
+            <tr class="assing" >
                 <td>Puhelin:</td>
-                <td><input type="text" name="puhelin"></td>
+                <td><input type="text" id="puhelin" name="puhelin"></td>
             </tr>
                 
-            <tr class="assing" id="osoite">
+            <tr class="assing" >
                 <td>Osoite:</td>
-                <td><textarea rows="6" cols="40" name="osoite"></textarea></td>
+                <td><textarea rows="6" cols="40" id="osoite" name="osoite"></textarea></td>
             </tr>
                 
-            <tr class="assing" id="maa">
+            <tr class="assing">
                 <td>Maa</td>
-                <td><select list="maita" type="text" name="maa" class="maa">
-                    <option value="Choose yours">[Choose yours]</option>
-                    <option value="islanti">Islanti</option>
-                    <option value="iso-britannia">Iso-Britannia</option>
-                    <option value="latvia">Latvia</option>
-                    <option value="liettua">Liettua</option>
-                    <option value="norja">Norja</option>
-                    <option value="ruotsi">Ruotsi</option>
-                    <option value="somalia">Somalia</option>
-                    <option value="suomi">Suomi</option>
-                    <option value="tanska">Tanska</option>
-                    <option value="venäjä">Venäjä</option>
-                    <option value="viro">Viro</option>
+                <td><select list="maita" type="text" name="maa"  id="maa" class="maa">
+                    <option value="000">[Choose yours]</option>
+                    <option value="001">Islanti</option>
+                    <option value="002">Iso-Britannia</option>
+                    <option value="003">Latvia</option>
+                    <option value="004">Liettua</option>
+                    <option value="005">Norja</option>
+                    <option value="006">Ruotsi</option>
+                    <option value="007">Somalia</option>
+                    <option value="008">Suomi</option>
+                    <option value="009">Tanska</option>
+                    <option value="010">Venäjä</option>
+                    <option value="011">Viro</option>
                     </select>
                 </td>
             </tr>
-                <td><button id="laheta">Lähetä</button></td>
+                <td><input type="submit" name="submit" id="laheta" value="Lähetä"/></td>
 
                 
 
             </form>
         </table>
         </div>
-        <script href="script.js"></script>
+
     </body>
 </html>
