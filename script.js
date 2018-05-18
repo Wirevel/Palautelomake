@@ -5,7 +5,7 @@ var sukunimi = document.forms["lomake"]["sukunimi"];
 var osoite = document.forms["lomake"]["osoite"];
 var puhelin = document.forms["lomake"]["puhelin"];
 var email = document.forms["lomake"]["email"];   
-
+var maa = document.forms["lomake"]["maa"];
     
 
     if (etunimi.value == ""){
@@ -58,12 +58,28 @@ var email = document.forms["lomake"]["email"];
         return false;
     }
 
-    else if (puhelin.value.length <= 7){
+    else if (puhelin.value.length <= 6){
     window.alert("Puhelinumero minimissään 7 numeroa");
     return false;
     }
 
-        
+    if (osoite.value == "") {
+    window.alert("Ole hyvä, ja anna osoitte");
+    osoite.focus();
+    return false;
+    }
+    
+    if (osoite.value.length <= 9){
+        window.alert("Pidempi kuin 10 kirjainta");
+        return false;
+    }
+    
+    
+    if (maa.value == 000){
+        window.alert("Valitse maa");
+        maa.focus();
+        return false;
+    }
     return true;
 }
 
